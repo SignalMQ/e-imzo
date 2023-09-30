@@ -16,5 +16,5 @@ Repozitoriyani yangilab boraman deb va'da bera olmayman, ammo vaqt bo'lganida ya
 1) Tayyor bo'lgan paketni o'rnatish uchun quyidagi buyruqni tering: <code>sudo apt install ./e-imzo.deb</code>
 2) Paket menejeri modul uchun kerakli bo'lgan yana boshqa paketlarni ham ko'rsatadi:
 ![Screenshot from 2023-09-30 19-32-51](https://github.com/SignalMQ/e-imzo/assets/77734001/c26e2c1f-20d4-4b48-89a8-ba603fa7c878)
-3) <code>y</code ni tering va <code>Enter</code> tugmasini bosing
+3) <code>y</code> ni tering va <code>Enter</code> tugmasini bosing
 4) O'rnatilish jarayoni tugagandan so'ng kompyuteringizni o'chirib yoqing
