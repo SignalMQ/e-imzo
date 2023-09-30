@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Exec=/usr/bin/e-imzo
+Hidden=false
+NoDisplay=false
+X-GNOME-Autostart-enabled=true
+Name[C]=E-IMZO
+Name=E-IMZO
+Comment[C]=E-IMZO moduli
+Comment=E-IMZO moduli
