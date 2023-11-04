@@ -20,3 +20,12 @@ Repozitoriyani yangilab boraman deb va'da bera olmayman, ammo vaqt bo'lganida ya
 ![Screenshot from 2023-09-30 19-32-51](https://github.com/SignalMQ/e-imzo/assets/77734001/c26e2c1f-20d4-4b48-89a8-ba603fa7c878)
 3) <code>y</code> ni tering va <code>Enter</code> tugmasini bosing
 4) O'rnatilish jarayoni tugagandan so'ng kompyuteringizni o'chirib yoqing
+# duch kelishingiz mumkin bo'lgan muammolar
+Agarda sizda shunday muammo paydo bo'lgan bo'lsa:
+![Снимок экрана от 2023-11-04 16-09-51](https://github.com/SignalMQ/e-imzo/assets/77734001/671de0a3-e350-4b79-a7fd-3799c7d901b4)<br>
+<b>Buning yechimi quyidagiday:</b>
+1) <code>cd ./e-imzo/DEBIAN/</code>
+2) <code>chmod 0775 control postinst prerm</code>
+![Снимок экрана от 2023-11-04 16-16-25](https://github.com/SignalMQ/e-imzo/assets/77734001/17db0a5b-0c59-4c45-86bb-e23f0236a844)<br>
+va natijada <code>dpkg-deb --build ./e-imzo</code> o'xshashi kerak:
+![Снимок экрана от 2023-11-04 16-22-23](https://github.com/SignalMQ/e-imzo/assets/77734001/17c380c0-616b-4c1c-ac11-aff8f1509dba)
