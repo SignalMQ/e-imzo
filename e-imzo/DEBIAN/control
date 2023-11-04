@@ -5,6 +5,6 @@ Priority: optional
 Pre-Depends: default-jre, pcscd, pcsc-tools, libpcsclite1, libccid
 Architecture: amd64
 Essential: no
-Installed-Size: 13615
+Installed-Size: 13994
 Maintainer: SignalMQ <matnazarovsobirjon123@gmail.com>
 Description: E-IMZO moduli (rasmiy emas)

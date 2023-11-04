@@ -1,8 +1,8 @@
 [Desktop Entry]
 Exec=java -jar /opt/E-IMZO/E-IMZO.jar
-Icon=/opt/E-IMZO/icon.svg
 Version=1.0
 Type=Application
-StartupNotify=true
+X-GNOME-Autostart-enabled=true
+StartupNotify=false
 Name=E-IMZO
-Comment=E-IMZO dasturi
+Comment=Avtomatik yuklash uchun

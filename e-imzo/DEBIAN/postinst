@@ -1,3 +1,5 @@
 #!/bin/sh
 sudo ln -s /opt/E-IMZO/E-IMZO.sh /usr/bin/e-imzo
-mv /tmp/e-imzo.desktop /home/*/.config/autostart
+sudo chmod 777 /opt/E-IMZO/E-IMZO.sh
+mv /tmp/e-imzo-autorun.desktop /home/*/.config/autostart
+mv /tmp/e-imzo.desktop /home/*/.local/share/applications
