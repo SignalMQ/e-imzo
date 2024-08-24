@@ -1,5 +1,27 @@
 #!/bin/sh
-sudo ln -s /opt/E-IMZO/E-IMZO.sh /usr/bin/e-imzo
-sudo chmod 777 /opt/E-IMZO/E-IMZO.sh
-mv /tmp/e-imzo-autorun.desktop /home/*/.config/autostart
-mv /tmp/e-imzo.desktop /home/*/.local/share/applications
+#define installation path
+INSTALL_DIR=/opt/E-IMZO
+echo "E-IMZO: running installation to $INSTALL_DIR"
+
+#prepare script
+ln -s $INSTALL_DIR/E-IMZO.sh /usr/bin/e-imzo
+chmod 777 $INSTALL_DIR/E-IMZO.sh
+echo "E-IMZO: prepare script (20%)"
+
+#generate .crt certificate
+openssl x509 -outform der -in $INSTALL_DIR/E-IMZO.pem -out $INSTALL_DIR/E-IMZO.crt
+echo "E-IMZO: generate certificate bundle (40%)"
+
+#copy certificate to trusted authority
+mv $INSTALL_DIR/E-IMZO.crt /usr/local/share/ca-certificates
+echo "E-IMZO: copy certicate to trusted authority (60%)"
+
+#update ca-certificates
+update-ca-certificates
+echo "E-IMZO: update ca-certificates (80%)"
+
+#autostart
+mv /tmp/e-imzo-autorun.desktop /etc/xdg/autostart
+mv /tmp/e-imzo.desktop /usr/share/applications
+echo "E-IMZO: autostart (100%)"
+echo "E-IMZO: seems be ready!"

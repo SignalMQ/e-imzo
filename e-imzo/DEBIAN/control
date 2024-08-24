@@ -1,10 +1,10 @@
 Package: E-IMZO
-Version: 4.47
+Version: 4.57
 Section: unknown
 Priority: optional
-Pre-Depends: default-jre, pcscd, pcsc-tools, libpcsclite1, libccid
+Pre-Depends: default-jre, pcscd, pcsc-tools, libpcsclite1, libccid, ca-certificates
 Architecture: amd64
 Essential: no
-Installed-Size: 13994
+Installed-Size: 14976
 Maintainer: SignalMQ <matnazarovsobirjon123@gmail.com>
 Description: E-IMZO moduli (rasmiy emas)
